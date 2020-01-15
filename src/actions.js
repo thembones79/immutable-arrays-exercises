@@ -10,10 +10,15 @@ export const REMOVE_THE_EVENT_WITH_ID_1 = "REMOVE_THE_EVENT_WITH_ID_1";
 export const PRODUCE_AN_ARRAY_THAT_ONLY_CONTAINS_SALES =
   "PRODUCE_AN_ARRAY_THAT_ONLY_CONTAINS_SALES";
 
+let i = 2;
+function increment() {
+  return ++i;
+}
+
 export function addAnEventToTheBeginningOfTheArray() {
   return {
     type: ADD_AN_EVENT_TO_THE_BEGINNING_OF_THE_ARRAY,
-    payload: { id: 3, type: "SALE", value: 18.99 }
+    payload: { id: increment(), type: "SALE", value: 18.99 }
   };
 }
 export function addAnEventToTheEndOfTheArray() {

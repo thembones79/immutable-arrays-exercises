@@ -1,0 +1,21 @@
+.buttons {
+  display: flex;
+  width: 90vw;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+button {
+  margin: 10px !important;
+}
+
+h1 {
+  text-align: center;
+  margin: 10px !important;
+}
+
+table {
+  margin: 20px !important;
+  width: 95vw !important;
+}

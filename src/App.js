@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 
 import * as actions from "./actions";
+import "./App.css";
 
 const App = ({
   events,
@@ -16,7 +17,7 @@ const App = ({
     <div>
       <h1>Immutable Arrays Excersises</h1>
       <div>
-        <table>
+        <table className="ui celled striped table">
           <thead>
             <tr>
               <th>id</th>
@@ -35,23 +36,41 @@ const App = ({
           </tbody>
         </table>
       </div>
-      <div>
-        <button onClick={addAnEventToTheBeginningOfTheArray}>
+      <div className="buttons">
+        <button
+          className="ui inverted primary button"
+          onClick={addAnEventToTheBeginningOfTheArray}
+        >
           1. Add an event to the beginning of the array
         </button>
-        <button onClick={addAnEventToTheEndOfTheArray}>
+        <button
+          className="ui inverted primary button"
+          onClick={addAnEventToTheEndOfTheArray}
+        >
           2. Add an event to the end of the array
         </button>
-        <button onClick={insertAnEventAfterTheFirstItem}>
+        <button
+          className="ui inverted primary button"
+          onClick={insertAnEventAfterTheFirstItem}
+        >
           3. Insert an event after the first item
         </button>
-        <button onClick={removeTheSecondEventFromTheList}>
+        <button
+          className="ui inverted primary button"
+          onClick={removeTheSecondEventFromTheList}
+        >
           4. Remove the second event from the list
         </button>
-        <button onClick={removeTheEventWithId1}>
+        <button
+          className="ui inverted primary button"
+          onClick={removeTheEventWithId1}
+        >
           5. Remove the event with id 1
         </button>
-        <button onClick={produceAnArrayThatOnlyContainsSales}>
+        <button
+          className="ui inverted primary button"
+          onClick={produceAnArrayThatOnlyContainsSales}
+        >
           6. Produce an array that only contains sales
         </button>
       </div>
